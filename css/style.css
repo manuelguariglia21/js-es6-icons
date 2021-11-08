@@ -1,9 +1,9 @@
 
-
 .mg-logo{
   font-family: 'Acme', sans-serif;
   color: #21AEDC;
   padding: 15px;
+  height: 80px;
 }
 
 nav{
@@ -13,6 +13,7 @@ nav{
   align-items: center;
   text-transform: uppercase;
   padding: 15px 0;
+  height: 80px;
 }
 
 nav span{
@@ -23,4 +24,40 @@ nav span{
 
 nav .form-select{
   width: 10%;
+}
+
+main{
+  height: calc(100vh - 160px);
+  padding: 15px;
+  background-color: #DDDDDD;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.mg-box{
+  width: 200px;
+  height: 100px;
+  border-radius: 15px;
+  box-shadow: 2px 2px #BBBBBB;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.mg-box i{
+  font-size: 50px;
+}
+
+.mg-orange{
+  color: orange;
+}
+.mg-blue{
+  color: blue;
+}
+.mg-green{
+  color: green;
 }
