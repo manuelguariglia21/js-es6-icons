@@ -154,3 +154,15 @@ const users  =  all.filter( user => {
 });
 
 console.log('Users ---->', users);
+
+
+
+function menuChange(){
+  const menu = document.getElementById('mg-menu').value;
+  console.log(menu);
+}
+
+
+
+
+
