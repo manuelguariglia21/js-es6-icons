@@ -1,4 +1,4 @@
-const animals = [
+const all = [
 	{
 		name: 'cat',
 		prefix: 'fa-',
@@ -112,3 +112,45 @@ const animals = [
 		color: 'blue'
 	}
 ];
+
+//Animals
+
+const animals  =  all.filter( animal => { 
+	if(animal.type === 'animal'){ 
+	return true;
+} 
+
+	else{ 
+	return false
+} 
+});
+
+console.log('Animals ---->', animals);
+
+//Vegetables
+
+const vegetables  =  all.filter( vegetable => { 
+	if(vegetable.type === 'vegetable'){ 
+	return true;
+} 
+
+	else{ 
+	return false
+} 
+});
+
+console.log('Vegetables ---->', vegetables);
+
+//Users
+
+const users  =  all.filter( user => { 
+	if(user.type === 'user'){ 
+	return true;
+} 
+
+	else{ 
+	return false
+} 
+});
+
+console.log('Users ---->', users);
