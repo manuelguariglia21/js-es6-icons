@@ -1,7 +1,30 @@
+/* GENERAL */
+
 body{
   background-color: #DDDDDD;
   font-family: 'Rubik', sans-serif;
 }
+
+/* color */
+
+.mg-box i{
+  font-size: 50px;
+}
+
+.mg-orange{
+  color: orange;
+}
+.mg-blue{
+  color: blue;
+}
+.mg-green{
+  color: green;
+}
+
+
+
+/* HEADER */
+
 .mg-logo{
   background-color: white;
   font-family: 'Acme', sans-serif;
@@ -30,6 +53,8 @@ nav .form-select{
   width: 10%;
 }
 
+/* MAIN */
+
 main{
   display: flex;
   justify-content: space-between;
@@ -47,18 +72,4 @@ main{
   justify-content: center;
   align-items: center;
   margin: 50px 30px;
-}
-
-.mg-box i{
-  font-size: 50px;
-}
-
-.mg-orange{
-  color: orange;
-}
-.mg-blue{
-  color: blue;
-}
-.mg-green{
-  color: green;
 }

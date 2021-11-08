@@ -1,3 +1,5 @@
+
+/****** ARRAY DATI INPUT ******/
 const all = [
 	{
 		name: 'cat',
@@ -113,10 +115,10 @@ const all = [
 	}
 ];
 
-
+/****** VARIABILE MAIN ******/
 const main = document.getElementById('mg-main');
 
-//Animals
+/****** ARRAY ANIMALS ******/
 
 const animals  =  all.filter( animal => { 
 	if(animal.type === 'animal'){ 
@@ -130,7 +132,7 @@ const animals  =  all.filter( animal => {
 
 console.log('Animals ---->', animals);
 
-//Vegetables
+/****** ARRAY VEGETABLES ******/
 
 const vegetables  =  all.filter( vegetable => { 
 	if(vegetable.type === 'vegetable'){ 
@@ -144,7 +146,7 @@ const vegetables  =  all.filter( vegetable => {
 
 console.log('Vegetables ---->', vegetables);
 
-//Users
+/****** ARRAY USERS ******/
 
 const users  =  all.filter( user => { 
 	if(user.type === 'user'){ 
@@ -160,7 +162,7 @@ console.log('Users ---->', users);
 
 menuChange();
 
-//-------------------------------------//
+/****** FUNZIONI ******/
 
 function printBox(element){
   const box = document.createElement('div');
