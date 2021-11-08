@@ -1,5 +1,8 @@
-
+body{
+  background-color: #DDDDDD;
+}
 .mg-logo{
+  background-color: white;
   font-family: 'Acme', sans-serif;
   color: #21AEDC;
   padding: 15px;
@@ -27,9 +30,6 @@ nav .form-select{
 }
 
 main{
-  height: calc(100vh - 160px);
-  padding: 15px;
-  background-color: #DDDDDD;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -45,7 +45,7 @@ main{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-transform: uppercase;
+  margin: 15px;
 }
 
 .mg-box i{

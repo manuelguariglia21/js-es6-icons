@@ -113,6 +113,9 @@ const all = [
 	}
 ];
 
+
+const main = document.getElementById('mg-main');
+
 //Animals
 
 const animals  =  all.filter( animal => { 
@@ -155,11 +158,68 @@ const users  =  all.filter( user => {
 
 console.log('Users ---->', users);
 
+menuChange();
 
+//-------------------------------------//
+
+function printBox(element){
+  const box = document.createElement('div');
+  box.className = 'mg-box';
+  main.append(box);
+  box.innerHTML = `
+  <div class="mg-icon">
+  <i class="${element.family} ${element.prefix}${element.name} mg-${element.color}"></i>
+  </div>
+
+  <div class="mg-name">
+    <span>${element.name}</span>
+  </div>
+  `; 
+}
 
 function menuChange(){
   const menu = document.getElementById('mg-menu').value;
-  console.log(menu);
+  
+  switch(menu) {
+    case 'all' :
+      console.log('Menu --->', menu);
+      main.innerHTML = ` `;
+      for(let i = 0; i < all.length; i++){
+        printBox(all[i]);
+      }
+      break;
+
+    case 'animals' :
+      console.log('Menu --->', menu);
+      main.innerHTML = ` `;
+      for(let i = 0; i < animals.length; i++){
+        printBox(animals[i]);
+      }
+      break;
+
+    case 'vegetables' :
+      console.log('Menu --->', menu);
+      main.innerHTML = ` `;
+      for(let i = 0; i < vegetables.length; i++){
+        printBox(vegetables[i]);
+      }
+      break;
+
+    case 'users' :
+      console.log('Menu --->', menu);
+      main.innerHTML = ` `;
+      for(let i = 0; i < users.length; i++){
+        printBox(users[i]);
+      }
+      break;
+
+    default:
+      main.innerHTML = ` `;
+      for(let i = 0; i < all.length; i++){
+        printBox(all[i]);
+      }
+      break;
+  }
 }
 
 
