@@ -1,0 +1,26 @@
+
+
+.mg-logo{
+  font-family: 'Acme', sans-serif;
+  color: #21AEDC;
+  padding: 15px;
+}
+
+nav{
+  background-color: #21AEDC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 15px 0;
+}
+
+nav span{
+  color: white;
+  font-weight: bolder;
+  padding-right: 10px;
+}
+
+nav .form-select{
+  width: 10%;
+}
