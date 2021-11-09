@@ -63,8 +63,8 @@ main{
 
 .mg-box{
   width: 200px;
-  height: 100px;
   border-radius: 15px;
+  padding: 15px;
   box-shadow: 2px 2px #BBBBBB;
   background-color: white;
   display: flex;
